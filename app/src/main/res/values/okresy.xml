@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string-array name="Okresy">
+            <item>Bratislavský</item>
+            <item>Trnavský</item>
+            <item>Trenčiansky</item>
+            <item>Nitriansky</item>
+            <item>Žilinský</item>
+            <item>Banskobystrický</item>
+            <item>Prešovský</item>
+            <item>Košický</item>
+        </string-array>
+
+</resources>

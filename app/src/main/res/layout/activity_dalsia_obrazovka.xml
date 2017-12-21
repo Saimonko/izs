@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.simon.zadanieap.DalsiaObrazovka">
+
+    <EditText
+        android:id="@+id/SystolickyTlak"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Systolicky tlak"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="mmHg"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/SystolickyTlak"
+        app:layout_constraintStart_toEndOf="@+id/SystolickyTlak"
+        app:layout_constraintTop_toTopOf="@+id/SystolickyTlak" />
+
+    <EditText
+        android:id="@+id/DialstolickyTlak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Dialstolicky tlak"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SystolickyTlak" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="mmHg"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/DialstolickyTlak"
+        app:layout_constraintStart_toEndOf="@+id/DialstolickyTlak"
+        app:layout_constraintTop_toTopOf="@+id/DialstolickyTlak"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <EditText
+        android:id="@+id/Tep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Tep"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DialstolickyTlak" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="bpm"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Tep"
+        app:layout_constraintStart_toEndOf="@+id/Tep"
+        app:layout_constraintTop_toTopOf="@+id/Tep"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <EditText
+        android:id="@+id/Hmotnost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="*Hmotnosť"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tep" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Kg"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Hmotnost"
+        app:layout_constraintStart_toEndOf="@+id/Hmotnost"
+        app:layout_constraintTop_toTopOf="@+id/Hmotnost" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="261dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hmotnost" />
+
+    <EditText
+        android:id="@+id/PoznamkyOLiekoch"
+        android:layout_width="352dp"
+        android:layout_height="222dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Poznámky o liekoch"
+        android:inputType="text|textMultiLine"
+        android:nestedScrollingEnabled="false"
+        android:scrollIndicators="left"
+        android:singleLine="false"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/MeratAktivitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="MeratAktivituBtnClicked"
+        android:text="Merať Aktivitu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/PoznamkyOLiekoch"
+        app:layout_constraintTop_toBottomOf="@+id/PoznamkyOLiekoch"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <Button
+        android:id="@+id/OdoslatBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="OdoslatBtnClicked"
+        android:text="Odoslať"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/PoznamkyOLiekoch"
+        app:layout_constraintTop_toBottomOf="@+id/PoznamkyOLiekoch"
+        app:layout_constraintVertical_bias="0.073" />
+
+</android.support.constraint.ConstraintLayout>
