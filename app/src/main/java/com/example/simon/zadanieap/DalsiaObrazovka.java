@@ -78,14 +78,14 @@ public class DalsiaObrazovka extends AppCompatActivity {
 
                 if (Email != null) {
                     // odosielanie emailu
-                    String EmailBody =  " Pohlavie: "+Pohlavie+"-----"+
-                                        " Vek: "+Vek+"------"+
-                                        " Okres: "+Okres+ "------"+
-                                        " Systolicky tlak: "+SystotickyTlak+" mmHg ------"+
-                                        " Dialstolicky tlak: "+DialstoickyTlak+" mmHg ------"+
-                                        " Tep: "+Tep + " bpm ------"+
-                                        " Hmotnost: "+ Hmotnost + " kg ------"+
-                                        " Email: "+ Email + "------ "+
+                    String EmailBody =  " Pohlavie: "+Pohlavie+"<br />"+
+                                        " Vek: "+Vek+"<br />"+
+                                        " Okres: "+Okres+ "<br />"+
+                                        " Systolicky tlak: "+SystotickyTlak+" mmHg <br />"+
+                                        " Dialstolicky tlak: "+DialstoickyTlak+" mmHg <br />"+
+                                        " Tep: "+Tep + " bpm <br />"+
+                                        " Hmotnost: "+ Hmotnost + " kg <br />"+
+                                        " Email: "+ Email + "<br /> "+
                                         " Poznámky o liekoch: "+PoznamkyOLiekoch;
 
 
@@ -93,7 +93,7 @@ public class DalsiaObrazovka extends AppCompatActivity {
                     List toEmailList = new ArrayList();
                     toEmailList.add(Email);
                     //TODO ked to prvy krat posles tak ti na mail pride upozonenie ze nejaka apka chcela pristup a musis to povolit....
-                     new SendMailTask(DalsiaObrazovka.this).execute("Tvoj Email","Heslo na ten mail"
+                     new SendMailTask(DalsiaObrazovka.this).execute("s","7"
                                                                             ,toEmailList,"ZadanieAP",  EmailBody);
 
 
@@ -111,6 +111,10 @@ public class DalsiaObrazovka extends AppCompatActivity {
     public void MeratAktivituBtnClicked(View view){
         //TODO dorob tu ten graf
         Toast.makeText(this,"Merat aktivitu dorob",Toast.LENGTH_LONG).show();
+
+        Intent i  =  new Intent(this,MeranieActivity.class);
+        startActivity(i);
+
 
     }
 }
