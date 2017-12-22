@@ -110,7 +110,6 @@ public class DalsiaObrazovka extends AppCompatActivity {
 
     public void MeratAktivituBtnClicked(View view){
         //TODO dorob tu ten graf
-        Toast.makeText(this,"Merat aktivitu dorob",Toast.LENGTH_LONG).show();
 
         Intent i  =  new Intent(this,MeranieActivity.class);
         startActivity(i);
